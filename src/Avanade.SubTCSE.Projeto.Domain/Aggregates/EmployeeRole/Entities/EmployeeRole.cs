@@ -9,6 +9,11 @@
             RoleName = roleName;
         }
 
+        public EmployeeRole(string roleName)
+        {
+            RoleName = roleName;
+        }
+
         public string Id { get; set; }
 
         public string RoleName { get; init; }
