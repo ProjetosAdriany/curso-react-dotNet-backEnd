@@ -1,7 +1,7 @@
 ﻿namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Entities
 {
     // Record: garante imutabilidade | A propriedade so pode ser alterada no construtor
-    public record EmployeeRole
+    public record EmployeeRole : BaseEntity<string>
     {
         public EmployeeRole(string id, string roleName)
         {
@@ -13,8 +13,6 @@
         {
             RoleName = roleName;
         }
-
-        public string Id { get; set; }
 
         public string RoleName { get; init; }
 
