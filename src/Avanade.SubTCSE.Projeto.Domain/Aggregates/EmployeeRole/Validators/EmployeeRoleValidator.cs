@@ -14,6 +14,13 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Validators
                     .NotEmpty()
                     .WithMessage("{PropertyName} is required");
             });
+
+            RuleSet("FindById", () => 
+            {
+                RuleFor(e => e.Id)
+                .NotEmpty()
+                .WithMessage("{PropertyName} is required");
+            });
         }
     }
 }
